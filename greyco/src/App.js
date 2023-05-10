@@ -1,14 +1,23 @@
 import './App.css';
-import { NavBar } from "./Estructura/Header/Header.js";
-import Image from 'react-bootstrap/Image'
-import EscudoGreyco from './pics/EscudoGreyco.jpg'
-
+import {Link} from 'react-router-dom';
+import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
+import {Inicio} from "./InicioPage/Inicio.js";
+import {NavBar} from "./Estructura/Header/Header.js";
 
 
 function App() {
-   return(
-    <NavBar/>
-   )    
+   return (
+      <div className="App">
+        <Router>
+          <Inicio />
+          <Routes>
+            <Route path= '/website' element={<NavBar/>}/>
+
+          </Routes>
+          
+        </Router>
+      </div>
+    );
 }
 
 export default App;

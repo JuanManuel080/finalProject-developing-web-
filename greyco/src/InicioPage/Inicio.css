@@ -1,0 +1,28 @@
+#logo{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    /* padding-bottom: 120px; */
+}
+
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+.boton Button{
+    width: 500px;
+    background-color: black;
+}
+
+.redes{
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.redes a{
+    padding-left: 30px;
+}
